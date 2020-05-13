@@ -4,4 +4,5 @@ export interface CookiesOptions {
   expires?: string | Date | null;
   secure?: boolean | null;
   httpOnly?: boolean | null;
+  sameSite?: 'Lax' | 'None' | 'Strict' | null;
 }

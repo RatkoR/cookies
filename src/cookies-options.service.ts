@@ -17,7 +17,8 @@ export class CookiesOptionsService {
       path: this.injector.get(APP_BASE_HREF, '/'),
       domain: null,
       expires: null,
-      secure: false
+      secure: false,
+      sameSite: 'Lax'
     };
     this._options = mergeOptions(this.defaultOptions, options);
   }

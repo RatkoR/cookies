@@ -63,6 +63,7 @@ export class BrowserCookiesService extends CookiesService {
     str += opts.domain ? ';domain=' + opts.domain : '';
     str += expires ? ';expires=' + expires.toUTCString() : '';
     str += opts.secure ? ';secure' : '';
+    str += opts.sameSite ? ';samesite=' + opts.sameSite : '';
     let cookiesLength = str.length + 1;
     if (cookiesLength > 4096) {
       console.log(`Cookie \'${name}\' possibly not set or overflowed because it was too

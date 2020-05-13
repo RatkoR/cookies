@@ -21,7 +21,8 @@ export function mergeOptions(oldOptions: CookiesOptions, newOptions?: CookiesOpt
     domain: isPresent(newOptions.domain) ? newOptions.domain : oldOptions.domain,
     expires: isPresent(newOptions.expires) ? newOptions.expires : oldOptions.expires,
     secure: isPresent(newOptions.secure) ? newOptions.secure : oldOptions.secure,
-    httpOnly: isPresent(newOptions.httpOnly) ? newOptions.httpOnly : oldOptions.httpOnly
+    httpOnly: isPresent(newOptions.httpOnly) ? newOptions.httpOnly : oldOptions.httpOnly,
+    sameSite: isPresent(newOptions.sameSite) ? newOptions.sameSite : oldOptions.sameSite,
   };
 }
 
